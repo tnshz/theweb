@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="img/logo.png">
+	<title>The World Wide Web</title>
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="css/www.css"></link>
+
+<nav> 
+	<a href="homepage.html" class="logo"><img src="img/logo.png"></a>
+	<ul>
+		<li>
+			<div id="myNav" class="overlay">
+  					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  					<div class="overlay-content">
+    					<a href="homepage.html">Home</a>
+    					<a href="aboutme.html">About Me</a>
+    					<a href="www.html">The World Wide Web</a>
+    					<a href="assessments.html">Assessments</a>
+  					</div>
+			</div>
+
+				<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+				<script>
+					function openNav() {
+  					document.getElementById("myNav").style.width = "100%";
+					}
+
+					function closeNav() {
+  					document.getElementById("myNav").style.width = "0%";
+					}
+				</script>
+		</li>
+	</ul>
+</nav>
+
+<div class="banner">
+	<h1> The World Wide Web</h1>
+	<p> This page will give you extensive information on the World Wide Web. This page talks about the Intranet, HTTP, FTP, TCP/IP and etc. Click on one of the tabs below to get started!</p>
+</div>
+<img class="gif" src="img/www.gif">
+	<button class="tablink" onclick="openTab('www', this, 'DimGray')" id="defaultOpen">What is the World Wide Web?</button>
+	<button class="tablink" onclick="openTab('internet', this, 'DimGray')">Internet and Intranet</button>
+	<button class="tablink" onclick="openTab('http', this, 'DimGray')">HTTP, FTP, TCP/IP</button>
+
+	<div id="www" class="tabcontent">
+		<img class="www2" src="img/www2.png" align="right" hspace="20" vspace="20">
+  		<h1>What is the World Wide Web?</h1>
+  		<h3>a. Introduction to the World Wide Web (WWW): Explain how the web works, the role of web servers, what are web browsers?</h3>
+  		<p>The World Wide Web (WWW), also widely known as the Web, was created by British computer scientist Sir Tim Berners-Lee. He created the web in order to have an information system where he could access all types of sources. These sources are identified by Uniform Resource Locators (URLs) . They are accessible all over the internet. The resources of the web are transferred by the HyperText Transfer Protocol (HTTP). The Web can be accessed through web browsers and are published by web servers. He was also responsible for writing HTML, URLs and HTTP. <br>
+		A web browser application takes you anywhere on the internet. It retrieves information from other parts of the web and displays it on your desktop or mobile device. This information needs to be shared and displayed in a consistent format so that people using any browser, anywhere in the world can see the information. However, not all web browsers format the information in the same way. <br>
+		There are two main forms of web servers. The Hardware side and the Software side. On the hardware side, the web server stores the server’s software and a website's component files (HTML, CSS, Javascript etc.)  On the other hand, the software side includes  several parts that control how web users access hosted files.  An HTTP server is software that understands URLs (web addresses) and HTTP (the protocol your browser uses to view webpages).</p>
+
+	</div>
+
+	<div id="internet" class="tabcontent">
+		<img class="wifi" src="img/wifi.jpg" align="right" hspace="20" vspace="20">
+  		<h1>Internet and Intranet</h1>
+  		<h3>b. How is the world wide web different to the internet?
+		</h3>
+  		<p>The World Wide Web is more of a system for accessing and navigating the internet. The WWW was created for information to be exchanged on a global level, whereas the internet is just a connection between multiple servers, programs and devices. If we were to visualise this relationship,  In a sense, the Internet is like a global computer, and the Web is basically the user accounts on that same computer.</p> 
+		<h3>c. What is an intranet? How does it relate to the internet?
+		</h3>
+		<p>An intranet is a private network setup for communication purposes within an organisation. At its core, the intranet is there to help employees communicate, share information and collaborate on projects for that organisation. In the modern day world, an intranet can take on many different forms, including forums, discussion areas, and question banks, and community based groups within social media. The internet consists of all these things, but is on a global level. The intranet is more of a restricted network. 
+		</p>
+	</div>
+
+	<div id="http" class="tabcontent">
+		<img class="http" src="img/http.png" align="right" hspace="20" vspace="20">
+  		<h1>HTTP, FTP, TCP/IP</h1>
+  		<h3>d. What is an internet protocol?  compare HTTP, TCP/IP and FTP
+		</h3>
+  		<p>HTTP is essentially the foundation of any data exchanging throughout the World Wide Web. <lb>
+		The IP (Internet Protocol) is the address system of the Internet.Basic network connections are made through IP, however IP does not handle error checking. This is done through TCP (Transmission Control Protocol). TCP is the component that collects and reassembles the packets of data, while IP is responsible for making sure the packets are sent to the right destination. <br>		FTP (File Transfer Protocol) is a way of transferring files between computers. You can use FTP to access a remote computer on the network to get or receive files, or to put or send files. <br>
+		All three of these are made for data transfer within two computers that are connected to the internet, but the main differences are that while TCP contains information about what data has or has not been received yet, HTTP contains specific instructions on how to read and process this data once it arrives. On the other hand, HTTP is used to share information through the internet without any authentication. With FTP, you are required to log in to access any files on the internet/computer. FTP is a client-server protocol which looks at communication between computer to computer whereas TCP looks at the communication between computer and network. 
+		</p>
+	</div>
+
+	<script>
+		function openTab(tabName,elmnt,color) {
+ 		 var i, tabcontent, tablinks;
+  		tabcontent = document.getElementsByClassName("tabcontent");
+  		for (i = 0; i < tabcontent.length; i++) {
+    	tabcontent[i].style.display = "none";
+  		}
+  		tablinks = document.getElementsByClassName("tablink");
+  		for (i = 0; i < tablinks.length; i++) {
+    	tablinks[i].style.backgroundColor = "";
+  		}
+  		document.getElementById(tabName).style.display = "block";
+  		elmnt.style.backgroundColor = color;
+
+		}
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+	</script>
+
+
+</body>
+<footer>
+ Made By Tanisha Zaman - IST (100HR)
+</footer>
+</html>

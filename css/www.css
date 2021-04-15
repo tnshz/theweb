@@ -1,0 +1,162 @@
+
+html{
+  background-color:#9F9C90 ;
+  font-size: 20px; 
+  padding: 50px 30px 30px 30px;
+  margin: 0px;
+}
+
+nav {
+  height: 70px;
+  background-color: #9F9C90;
+  box-shadow-bottom: 8px rgba(0,0,0,.2);
+  position: sticky;
+  top: 0;
+  padding-bottom: 15px;
+  z-index: 1;
+}
+
+nav .logo{
+  display: block;
+  width: 1150px;
+  height: 46px;
+  position: absolute; top: 50%; left: 0;
+  margin-top: -20px;
+  margin-left: 30px;
+  background: url(img/logo.png) no-repeat 0 0;
+  background-size: 100%;
+  overflow: hidden;
+}
+
+nav ul{
+  padding: 0;
+  margin: 0 20px 0 0 ;
+  display: block;
+}
+
+nav ul li{
+  padding: 0;
+  margin: 25px;
+  display: block;
+  float: right;
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity:70%;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  color: #E4DDBA;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #9F9C90;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #E4DDBA
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+.banner{
+margin: 0 auto;
+box-sizing: border-box;
+background-color: #E4DDBA;
+border-radius: 15px;
+height: 200px;
+padding: 60px 20px;
+box-sizing: border-box;
+margin-bottom: 30px;
+}
+
+.banner h1 {
+text-align: center;
+color: #484041;
+font-family: 'Tinos', serif;
+font-size: 50px; 
+margin: 0 auto; 
+margin-bottom: 30px;
+}
+.gif{
+  width: 1500px;
+  height: auto;
+  opacity: 70%;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.tablink {
+  background-color: #9F9C90 ;
+  color: #E4DDBA;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #808080;
+}
+
+/* Style the tab content */
+.tabcontent {
+  color: #E4DDBA;
+  display: none;
+  padding: 50px;
+  text-align: left;
+  border-radius: 15px;
+  font-size: 20px;
+}
+.www2{
+  width: 350px;
+  height: 350px;
+}
+.wifi{
+  width: 666px;
+  height: 375px;
+}
+
+#www{background-color: #696969;}
+#internet{background-color:#696969;}
+#http{background-color: #696969;}
+
+footer {
+text-align: center;
+color: #E4DDBA;
+font-size: 20px;
+margin-top: 10px;
+}
